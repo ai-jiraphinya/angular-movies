@@ -1,7 +1,39 @@
-# angular-movies
+  <div class="image-container">
+    <a href="https://github.com/pripramot/i-studio">
+      <p><img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1709320098585/ad7c1903-a3fb-4d9b-8408-dcba8d278bbf.png?auto=compress,format&amp;format=webp" alt="" class="image--center mx-auto"></p>
+    </a>
+  </div>
+
+  <h4 align="center">
+    <a href="https://mtify.hashnode.dev/">Get Started</a> |
+    <a href="https://github.com/ai-jiraphinya/ai-jiraphinya/wiki">Docs</a> |
+    <a href="https://nuxt-movies.vercel.app">By TMDB</a>
+  </h4>
+  <h1 align="center">angular-movies</h1>
+</p>
+
+**แจ่มจัง ภาพยนต์**
 
 ## NO General-ฉันอ่านของฉันรู้เรื่อง!
- แจ่มจัง ภาพยนต์  
+
+<p align="center">
+  <a aria-label="Join the community on Slack" href="https://mtify.hashnode.dev">
+    <img alt="" src="https://img.shields.io/badge/i_studio_hashnode-blue?link=https%3A%2F%2Fmtify.hashnode.dev">
+  </a>
+  <a aria-label="Join the on Telegram" href="https://ai-jiraphinya.github.io">
+    <img alt="" src="https://img.shields.io/badge/Mint_-Github.io-red">
+  </a>
+  <a aria-label="Join the on Telegram" href="https://t.me/MintChatAI">
+    <img alt="" src="https://img.shields.io/badge/Telegram_-%40Mint-%2326A5E4?style=flat&logo=telegram&link=https%3A%2F%2Ft.me%2FMintChatAI">
+  </a>
+  <a aria-label="Join the Mastodon" href="https://mastodon.social/@Mintify">
+    <img alt="" src="https://img.shields.io/badge/Mastodon_-Jiraphinya-%236364FF?style=flat&logo=Mastodon">
+  </a>
+</p>
+
+<p align="center">
+ <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1710001539644/bcd4a554-f71f-4829-8298-ab484104a845.png?auto=compress,format&amp;format=webp" alt="" class="image--center mx-auto">
+</p>
 ## กุญเเจตัวอย่าง
 
 <!-- กุญเเจตัวอย่าง -->
