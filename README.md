@@ -16,14 +16,14 @@
 
 
 
-<h4 align="center"> NO General-ฉันอ่านของฉันรู้เรื่อง!แจ่มจัง ภาพยนต์</h4>
+<h3 align="center"> NO General-ฉันอ่านของฉันรู้เรื่อง!แจ่มจัง ภาพยนต์</h3>
 
 <p align="center">
   <a aria-label="Join the community on Slack" href="https://mtify.hashnode.dev">
     <img alt="" src="https://img.shields.io/badge/i_studio_hashnode-blue?link=https%3A%2F%2Fmtify.hashnode.dev">
   </a>
-  <a aria-label="Join the on Telegram" href="https://ai-jiraphinya.github.io">
-    <img alt="" src="https://img.shields.io/badge/Mint_-Github.io-red">
+  <a aria-label="Join angular-movies" href="https://angular-movies-a12d3.web.app">
+    <img alt="" src="https://img.shields.io/badge/mint_-angular%20movies-blue?logo=angular&logoColor=%230F0F11&labelColor=%23DD1100">
   </a>
   <a aria-label="Join the on Telegram" href="https://t.me/MintChatAI">
     <img alt="" src="https://img.shields.io/badge/Telegram_-%40Mint-%2326A5E4?style=flat&logo=telegram&link=https%3A%2F%2Ft.me%2FMintChatAI">
@@ -37,7 +37,7 @@
  <img loading="lazy" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1710001539644/bcd4a554-f71f-4829-8298-ab484104a845.png?auto=compress,format&amp;format=webp" alt="" class="image--center mx-auto">
 </p>
 
-## กุญเเจตัวอย่าง
+## เปิดด้วย desktop,เปิดด้วยมือถือ,คุณจะเห็น README.md ต่างกัน
 
 <!-- กุญเเจตัวอย่าง -->
 
@@ -61,7 +61,7 @@
 
 ## Commits,
 
-### Hooks,กัปคันเเขนเดียว
+### Hooks,กัปตันเเขนเดียว
 
 ในการตั้งค่า commit hooks ให้เรียกใช้ `npm run prepare`.
 
@@ -89,7 +89,7 @@ graph TD;
     deploy-->user-flow;
 ```
 
-## ลําดับชั้นของแอป
+## ลําดับชั้นของแอป.desktop-มือถือ.คุณจะเห็นสิ่งนี้ไม่เหมือนกัน
 
 The repository maintains the following projects:พื้นที่เก็บข้อมูลรักษาโครงการต่อไปนี้:
 
@@ -333,3 +333,4 @@ As the build will not break because of require usage we need to test against fun
 
 <!-- bundle-stats-end -->
 
+**เปิดด้วย desktop,เปิดด้วยมือถือ,คุณจะเห็น README.md ต่างกัน**
