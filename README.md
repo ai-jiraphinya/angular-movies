@@ -49,8 +49,8 @@
 | play.kakjeawplay.xyz/embed/8d75pma835                                                                   | พระเอกยืนบนหลังปลา ภาค 2 |
 | play.kakjeawplay.xyz/embed/nwbhpvuyux                                                                              | คอลเซ็นเตอร์ไม่ดี ฆ่าผึ้งข้า ภาพ sd         |
 | play.kakjeawplay.xyz/embed/sch64mvgkf                      | อนิเมะ      |
-|                      |        |
-|                                                                        |       |
+| hlsp2p.xyz/play/32b4f680-fab5-5396-a47d-86a06ee82f2f                     | shogun-1       |
+| hlsp2p.xyz/play/e84a2fcc-c017-583e-a1c7-b447a029a272                     | shogun-2      |
 |  |       |
 |                                                                           |        |
  
