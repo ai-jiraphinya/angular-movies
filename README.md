@@ -1,5 +1,16 @@
 # angular-movies
 
+```
+ส่วนหัวของข้อความคอมมิต
+<type>(<scope>): <short summary>
+  │       │             │
+  │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
+  │       │
+  │       └─⫸ Commit Scope: project names
+  │
+  └─⫸ Commit Type: fix|feat|perf|docs|refactor|test|chore|...
+```
+
 <p align="center">
 
   <div class="image-container">
