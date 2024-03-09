@@ -1,0 +1,39 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "useDefineForClassFields": false,
+    "baseUrl": ".",
+    "paths": {
+      "angular-movies": [
+        "dist/projects/movies/src/main.js",
+        "projects/movies/src/index.ts"
+      ],
+      "angular-movies-renderer2": ["angular-movies-renderer2/src/index.ts"],
+      "movies-ufo": ["projects/movies-user-flows/src/index.ts"],
+      "test-selectors": ["projects/test-selectors/src/index.ts"]
+    }
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {}
+  },
+  "exclude": ["node_modules", "tmp"]
+}
