@@ -16,7 +16,7 @@
 
 
 
-<h3 align="center"> NO General-ฉันอ่านของฉันรู้เรื่อง!แจ่มจัง ภาพยนต์</h3>
+<h3 align="center">NO General-ฉันอ่านของฉันรู้เรื่อง!แจ่มจัง ภาพยนต์</h3>
 
 <p align="center">
   <a aria-label="Join the community on Slack" href="https://mtify.hashnode.dev">
