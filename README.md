@@ -2,6 +2,7 @@
 
 ```
 ส่วนหัวของข้อความคอมมิต
+
 <type>(<scope>): <short summary>
   │       │             │
   │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
