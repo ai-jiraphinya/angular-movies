@@ -1,0 +1,62 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx-cloud"
+    }
+  },
+  "affected": {
+    "defaultBase": "origin/main"
+  },
+  "namedInputs": {
+    "sharedGlobals": [],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": [
+      "default",
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/src/test-setup.[jt]s"
+    ]
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "lint": {
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
+    },
+    "test": {
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
+    },
+    "serve-static": {
+      "dependsOn": ["build"],
+      "inputs": ["development", "^development"]
+    },
+    "emulate-firebase": {
+      "dependsOn": ["build"]
+    },
+    "deploy-firebase": {
+      "dependsOn": ["build"]
+    }
+  },
+  "generators": {
+    "@push-based/user-flow-nx-plugin:target": {
+      "targetName": "user-flow"
+    },
+    "@nx/angular:application": {
+      "style": "css",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "none"
+    },
+    "@nx/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nx/angular:component": {
+      "style": "css"
+    }
+  }
+}
