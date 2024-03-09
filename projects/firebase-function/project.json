@@ -1,0 +1,119 @@
+{
+  "name": "firebase-function",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "projects/firebase-function/src",
+  "projectType": "application",
+  "implicitDependencies": ["ng-universal-express"],
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "deleteOutputPath": false,
+        "outputPath": "./dist/projects/movies/server",
+        "outputFileName": "index.js",
+        "main": "projects/firebase-function/src/index.ts",
+        "tsConfig": "./projects/firebase-function/tsconfig.function.json"
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "sourceMap": true
+        },
+        "development": {
+          "optimization": false,
+          "sourceMap": false
+        },
+        "stats": {
+          "optimization": true,
+          "statsJson": true
+        }
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nx run firebase-function:build",
+          "nx emulate firebase-function"
+        ],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["projects/firebase-function/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/dist/coverage/firebase-function"],
+      "options": {
+        "jestConfig": "projects/firebase-function/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "commands": ["npx firebase deploy --project angular-movies"],
+        "parallel": false
+      }
+    },
+    "deploy-firebase": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "commands": [
+          "npx firebase --project=angular-movies --config=firebase.function.json deploy --only=functions "
+        ],
+        "parallel": false
+      }
+    },
+    "emulate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx firebase --project=angular-movies --config=firebase.function.json emulators:start"
+        ],
+        "parallel": false
+      }
+    },
+    "user-flow": {
+      "executor": "@push-based/user-flow-nx-plugin:user-flow",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "url": "http://127.0.0.1:4402/angular-movies-a12d3/us-central1/ssr",
+        "rcPath": "projects/firebase-function/.user-flowrc.json",
+        "outputPath": "dist/user-flow/firebase-function",
+        "ufPath": "projects/firebase-function/user-flows",
+        "serveCommand": "nx run firebase-function:serve",
+        "awaitServeStdout": "Other reserved ports",
+        "format": ["html"]
+      },
+      "configurations": {
+        "development": {
+          "verbose": true,
+          "dryRun": true
+        },
+        "production": {
+          "verbose": true,
+          "dryRun": false
+        }
+      },
+      "defaultConfiguration": "development"
+    }
+  },
+  "tags": ["scope:server", "type:app"]
+}

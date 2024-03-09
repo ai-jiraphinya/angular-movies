@@ -1,0 +1,20 @@
+{
+  "name": "test-selectors",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "projects/test-selectors/src",
+  "prefix": "lib",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "projects/test-selectors/**/*.ts",
+          "projects/test-selectors/**/*.html"
+        ]
+      }
+    }
+  }
+}
